@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Counter } from "./components/Counter";
+import { CounterEffect } from './components/CounterEffect';
+import { CounterReducerComponent } from './counter-module-reducer/CounterReducerComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <div style={{padding: 20}}>
+     <h1>React</h1>
+     <hr />
+     <Counter initialValue={20} />
+     <hr />
+     <CounterEffect />
+     <hr />
+     <CounterReducerComponent />
+     </div>
   );
 }
 
